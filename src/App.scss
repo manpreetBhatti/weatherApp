@@ -1,0 +1,104 @@
+.loaderContainer{
+    background-image: linear-gradient(305deg, orange, #eccc91);
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App{
+    background-image: linear-gradient(305deg, orange, #eccc91);
+    height: 100vh;
+    color: white;
+
+    .cityNav{
+        display: flex;
+        justify-content: space-around;
+        height: 40px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+
+        .cityName{
+            padding: 20px;
+            cursor: pointer;
+        }
+    }
+
+    .searchDiv{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        input{
+            height: 20px;
+            width: 250px;
+            border: none;
+            padding: 10px;
+            margin-right: 5px;
+        }
+
+        svg{
+            cursor: pointer;
+        }
+    }
+
+    .cityNameSelected{
+        font-size: 40px;
+        font-weight: bold;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .mainTempratureContainer{
+        display: flex;
+        width: 400px;
+        margin: auto;
+        justify-content: space-between;
+
+        .tempDiv{
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .extraInfoDiv{
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            img{
+                vertical-align: text-bottom;
+                margin-right: 10px;
+            }
+            
+            span{
+                font-size: 15px;
+            }
+        }
+    }
+
+    .highSunContainer{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width:800px;
+        margin-top: 40px;
+       
+
+        div{
+            font-size: 16px;
+        }
+
+        img{
+            vertical-align: middle;
+            height: 30px;
+        }
+    }
+
+    .hourlyDivContainer,.dailyDivContainer{
+        font-size: 20px;
+        font-weight: bold;
+        border-bottom: 2px solid ;
+        text-align: left;
+        padding: 20px;
+    }
+}

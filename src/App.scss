@@ -36,6 +36,11 @@
             border: none;
             padding: 10px;
             margin-right: 5px;
+            border-radius: 2px;
+
+            &:focus{
+                outline: none;
+            }
         }
 
         svg{
@@ -97,8 +102,38 @@
     .hourlyDivContainer,.dailyDivContainer{
         font-size: 20px;
         font-weight: bold;
-        border-bottom: 2px solid ;
         text-align: left;
         padding: 20px;
+
+        .title{
+            border-bottom: 2px solid white;
+            padding-bottom: 10px;
+        }
+
+        div{
+            margin-top: 5px;
+        }
+    }
+
+    .dailyTempContainer{
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+
+        .dailyTempDiv{
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+
+    .hourlyTempDiv{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        .hourlyTemp{
+            font-size: 15px;
+            text-align: center;
+        }
     }
 }

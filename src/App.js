@@ -80,7 +80,7 @@ function App() {
               );
             })}
           </div>
-          <div className="searchDiv">
+          {/* <div className="searchDiv">
             <input type="text" placeholder="Search for city" />
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -110,12 +110,12 @@ function App() {
                 </g>
               </g>
             </svg>
-          </div>
+          </div> */}
+          <div className="cityNameSelected">{citySelected.name}</div>
           <div className="dateTime">
             {today.toDateString()} | Local Time:{" "}
             {today.toLocaleTimeString("en-US", { hour12: true })}
           </div>
-          <div className="cityNameSelected">{citySelected.name}</div>
           <div className="mainTempratureContainer">
             <div className="tempDiv">{currentData.temperature_2m}&deg;C</div>
             <div className="extraInfoDiv">
